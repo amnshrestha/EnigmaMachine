@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/background">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/rotors"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="30dp"
+        >
+        <include layout = "@layout/rotorlayout"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:paddingBottom = "10dp"
+            android:id="@+id/firstRotor"
+            android:layout_centerHorizontal="true"
+            android:layout_marginRight="50dp"
+
+
+            />
+        <include layout = "@layout/rotorlayout"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/secondRotor"
+            />
+
+
+        <include layout = "@layout/rotorlayout"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/thirdRotor"
+            android:layout_marginLeft="50dp"
+            android:layout_centerHorizontal="true"
+            />
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/ImageButton01"
+        android:layout_width="2dp"
+        android:layout_height="20dp"
+        android:layout_margin="40dp"
+        android:onClick="displayInstruction"
+        android:layout_toRightOf="@id/rotors"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/question" />
+
+
+
+
+    <EditText
+        android:id="@+id/message"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginLeft="50dp"
+        android:textAlignment="center"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/roundedrectangle"
+        android:textColor="@android:color/white"
+        android:paddingTop="10dp"
+        android:layout_below="@id/rotors" />
+    <Button
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/plugboardbg"
+        android:text="Encrypt"
+        android:layout_centerHorizontal="true"
+
+        android:id="@+id/DoneButton"
+        android:onClick="encrypt"
+        android:layout_below="@id/message"/>
+
+    <TextView
+        android:id="@+id/encrypted"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:textAlignment="center"
+        android:layout_below="@+id/DoneButton"
+        android:layout_marginLeft="50dp"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="20dp"
+        android:background="@drawable/roundedrectangle"
+        android:textColor="@android:color/holo_orange_light"
+        android:textIsSelectable="true"/>
+
+    <Button
+        android:background="@drawable/plugboardbg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/encrypted"
+        android:layout_marginTop="10dp"
+        android:text="Plug Board"
+        android:id="@+id/plugBoard"
+        android:onClick="callPlugBoard"
+        />
+
+
+
+</RelativeLayout>

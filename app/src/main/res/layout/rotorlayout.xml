@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    >
+
+
+        <com.michaelmuenzer.android.scrollablennumberpicker.ScrollableNumberPicker
+            android:id="@+id/numberPicker"
+            android:layout_width="20dp"
+            android:layout_height="100dp"
+
+            android:background="@drawable/rotorimage"
+
+
+
+            app:snp_buttonIconDown="@drawable/arrow_down"
+            app:snp_buttonIconUp="@drawable/arrow_up"
+            app:snp_maxValue="26"
+            app:snp_minValue="1"
+            app:snp_value="1"
+            app:snp_stepSize="1"
+            app:snp_updateInterval="10"
+            app:snp_orientation="vertical"
+            app:snp_valueMarginStart="8dp"
+            app:snp_valueMarginEnd="8dp"
+            >
+
+        </com.michaelmuenzer.android.scrollablennumberpicker.ScrollableNumberPicker>
+
+
+
+
+</RelativeLayout>

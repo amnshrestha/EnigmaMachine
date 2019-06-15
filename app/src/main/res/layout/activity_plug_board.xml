@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".PlugBoard">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="40dp"
+        android:id="@+id/topLayout">
+
+        <RelativeLayout
+            android:id="@+id/FirstRow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true">
+
+            <Button
+                android:id="@+id/A"
+                android:layout_width="30dp"
+                android:layout_height="60dp"
+                android:background="@drawable/roundedrectangle"
+                android:textColor="@color/white"
+                android:onClick="buttonPressed"
+                android:text="A:\nA"/>
+
+            <Button
+                android:id="@+id/B"
+                android:layout_width="30dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="50dp"
+                android:layout_toRightOf="@+id/A"
+                android:background="@drawable/roundedrectangle"
+                android:onClick="buttonPressed"
+                android:textColor="@color/white"
+                android:text="B:\nB"/>
+
+            <Button
+                android:id="@+id/C"
+                android:layout_width="30dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="50dp"
+                android:layout_toRightOf="@+id/B"
+                android:background="@drawable/roundedrectangle"
+                android:textColor="@color/white"
+                android:onClick="buttonPressed"
+                android:text="C:\nC"/>
+
+            <Button
+                android:id="@+id/D"
+                android:layout_width="30dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="50dp"
+                android:layout_toRightOf="@+id/C"
+                android:background="@drawable/roundedrectangle"
+                android:onClick="buttonPressed"
+                android:textColor="@color/white"
+                android:text="D:\nD"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/SecondRow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/FirstRow"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/white"
+            android:text="E:\nE">
+
+            <Button
+                android:id="@+id/E"
+                android:layout_width="30dp"
+                android:layout_height="60dp"
+                android:background="@drawable/roundedrectangle"
+                android:textColor="@color/white"
+                android:onClick="buttonPressed"
+                android:text="E:\nE"/>
+
+            <Button
+                android:id="@+id/F"
+                android:layout_width="30dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="50dp"
+                android:layout_toRightOf="@+id/E"
+                android:background="@drawable/roundedrectangle"
+                android:textColor="@color/white"
+                android:onClick="buttonPressed"
+                android:text="F:\nF"/>
+
+            <Button
+                android:id="@+id/G"
+                android:layout_width="30dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="50dp"
+                android:layout_toRightOf="@+id/F"
+                android:background="@drawable/roundedrectangle"
+                android:textColor="@color/white"
+                android:onClick="buttonPressed"
+                android:text="G:\nG"/>
+
+            <Button
+                android:id="@+id/H"
+                android:layout_width="30dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="50dp"
+                android:layout_toRightOf="@+id/G"
+                android:background="@drawable/roundedrectangle"
+                android:textColor="@color/white"
+                android:onClick="buttonPressed"
+                android:text="H:\nH"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/ThirdRow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/SecondRow"
+            android:layout_centerHorizontal="true"
+            android:onClick="buttonPressed"
+            android:layout_marginTop="10dp">
+
+            <Button
+                android:id="@+id/I"
+                android:layout_width="30dp"
+                android:layout_height="60dp"
+                android:background="@drawable/roundedrectangle"
+                android:textColor="@color/white"
+                android:onClick="buttonPressed"
+                android:text="I:\nI"/>
+
+            <Button
+                android:id="@+id/J"
+                android:layout_width="30dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="50dp"
+                android:layout_toRightOf="@+id/I"
+                android:background="@drawable/roundedrectangle"
+                android:textColor="@color/white"
+                android:onClick="buttonPressed"
+                android:text="J:\nJ"/>
+
+            <Button
+                android:id="@+id/K"
+                android:layout_width="30dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="50dp"
+                android:layout_toRightOf="@+id/J"
+                android:background="@drawable/roundedrectangle"
+                android:textColor="@color/white"
+                android:onClick="buttonPressed"
+                android:text="K:\nK"/>
+
+            <Button
+                android:id="@+id/L"
+                android:layout_width="30dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="50dp"
+                android:layout_toRightOf="@+id/K"
+                android:background="@drawable/roundedrectangle"
+                android:textColor="@color/white"
+                android:onClick="buttonPressed"
+                android:text="L:\nL"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/FourthRow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ThirdRow"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp">
+
+            <Button
+                android:id="@+id/M"
+                android:layout_width="30dp"
+                android:layout_height="60dp"
+                android:background="@drawable/roundedrectangle"
+                android:textColor="@color/white"
+                android:onClick="buttonPressed"
+                android:text="M:\nM"/>
+
+            <Button
+                android:id="@+id/N"
+                android:layout_width="30dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="50dp"
+                android:layout_toRightOf="@+id/M"
+                android:background="@drawable/roundedrectangle"
+                android:textColor="@color/white"
+                android:onClick="buttonPressed"
+                android:text="N:\nN"/>
+
+            <Button
+                android:id="@+id/O"
+                android:layout_width="30dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="50dp"
+                android:layout_toRightOf="@+id/N"
+                android:background="@drawable/roundedrectangle"
+                android:textColor="@color/white"
+                android:onClick="buttonPressed"
+                android:text="O:\nO"/>
+
+            <Button
+                android:id="@+id/P"
+                android:layout_width="30dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="50dp"
+                android:layout_toRightOf="@+id/O"
+                android:background="@drawable/roundedrectangle"
+                android:textColor="@color/white"
+                android:onClick="buttonPressed"
+                android:text="P:\nP"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/FifthRow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/FourthRow"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp">
+
+            <Button
+                android:id="@+id/Q"
+                android:layout_width="30dp"
+                android:layout_height="60dp"
+                android:background="@drawable/roundedrectangle"
+                android:textColor="@color/white"
+                android:onClick="buttonPressed"
+                android:text="Q:\nQ"/>
+
+            <Button
+                android:id="@+id/R"
+                android:layout_width="30dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="50dp"
+                android:layout_toRightOf="@+id/Q"
+                android:background="@drawable/roundedrectangle"
+                android:textColor="@color/white"
+                android:onClick="buttonPressed"
+                android:text="R:\nR"/>
+
+            <Button
+                android:id="@+id/S"
+                android:layout_width="30dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="50dp"
+                android:layout_toRightOf="@+id/R"
+                android:background="@drawable/roundedrectangle"
+                android:textColor="@color/white"
+                android:onClick="buttonPressed"
+                android:text="S:\nS"/>
+
+            <Button
+                android:id="@+id/T"
+                android:layout_width="30dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="50dp"
+                android:layout_toRightOf="@+id/S"
+                android:background="@drawable/roundedrectangle"
+                android:textColor="@color/white"
+                android:onClick="buttonPressed"
+                android:text="T:\nT"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/SixthRow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/FifthRow"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true">
+
+            <Button
+                android:id="@+id/U"
+                android:layout_width="30dp"
+                android:layout_height="60dp"
+                android:background="@drawable/roundedrectangle"
+                android:textColor="@color/white"
+                android:onClick="buttonPressed"
+                android:text="U:\nU"/>
+
+            <Button
+                android:id="@+id/V"
+                android:layout_width="30dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="50dp"
+                android:layout_toRightOf="@+id/U"
+                android:background="@drawable/roundedrectangle"
+                android:textColor="@color/white"
+                android:onClick="buttonPressed"
+                android:text="V:\nV"/>
+
+            <Button
+                android:id="@+id/W"
+                android:layout_width="30dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="50dp"
+                android:layout_toRightOf="@+id/V"
+                android:background="@drawable/roundedrectangle"
+                android:textColor="@color/white"
+                android:onClick="buttonPressed"
+                android:text="W:\nW"/>
+
+            <Button
+                android:id="@+id/X"
+                android:layout_width="30dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="50dp"
+                android:layout_toRightOf="@+id/W"
+                android:background="@drawable/roundedrectangle"
+                android:textColor="@color/white"
+                android:onClick="buttonPressed"
+                android:text="X:\nX"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/SeventhRow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/SixthRow"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true">
+
+            <Button
+                android:id="@+id/Y"
+                android:layout_width="30dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/roundedrectangle"
+                android:textColor="@color/white"
+                android:onClick="buttonPressed"
+                android:text="Y:\nY"/>
+
+            <Button
+                android:id="@+id/Z"
+                android:layout_width="30dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="50dp"
+                android:layout_toRightOf="@+id/Y"
+                android:background="@drawable/roundedrectangle"
+                android:textColor="@color/white"
+                android:onClick="buttonPressed"
+                android:text="Z:\nZ"/>
+
+
+        </RelativeLayout>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/plugboardbg"
+            android:text="Done"
+            android:id="@+id/doneButton"
+            android:layout_alignParentBottom="true"
+            android:onClick="doneWithPlugBoard"/>
+    </RelativeLayout>
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Enigmatic Encryption</string>
+
+    <string name="Instructions">Description:
+\nThe Enigma machine was used by the Germans during the Second World War to encrypt their messages. For most of the initial duration of the war, this coding machine was thought of as unbreakable because of the number of possibilities it had. It took the genius of Alan Turing and his team to decrypt this machine. This application is designed to depict the working of the Enigma machine with similar features and flaws.
+\n\nHow to use:
+\nYou can set the rotors to any number between 1 and 26. Each number represents a character in the English Language. Then, the top Textbox can be used to type in the message. Once you press “Encrypt”, the bottom Textbox will show the encrypted message. The encrypted text can be used as input with the same rotor values to get the decrypted text. The genius of this machine is that a character isn’t just replaced by another character. Rather, the position of the rotor is taken into consideration to encode each character. Which means, only the same rotor positions can decrypt the message. In order to add further complexity, like the Engima machine used in war, we have provided a plugboard that allows you to switch letters. Here, the input character can be given another level of encryption by replacing it with another character of your choice. These settings also need to be the same inorder to get the decrypted text.
+\nNote: To keep it consistent with the original machine, the app also only accepts English characters and no numbers or special characters. Also, spaces are removed before encryption.
+\n\nHow it works.
+\nAfter you select your preferred plugboard settings, you input your message. For each character in the message, the rotors move. The first rotor moves one position, if this makes it a complete rotation (beyond 26), the rotor goes back to 1 and then moves the second rotor by 1. The same mechanism works for the third rotor. Each rotor, now moved a particular number of times, provides a different “circuit” for the current to flow. Each character, first goes through the plugboard to be swapped with the character of choice, then goes through this circuit provided by the rotors, then it is reflected back as a new character. The new character goes through the circuit from the rotors again and goes back to the plugboard, gets swapped with the letter chosen and then becomes a part of the encrypted text.
+
+\n\nThe following websites were used as reference for building this application:
+\nhttp://enigma.louisedade.co.uk/
+\nhttps://www.youtube.com/watch?v=UKbP3Rjxhy0&amp;t=392s
+</string>
+</resources>
